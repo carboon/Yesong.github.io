@@ -28,7 +28,7 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;在安装hugo后，找一个目录 执行： #hugo new site mysite .会生成一个目录,目录内容如下：
-&lt;img src=&#34;https://carboon.github.io/hugo&amp;#43;github%e6%89%93%e9%80%a0%e5%b1%9e%e4%ba%8e%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8d%9a%e5%ae%a2.resources/1676D8DC-DB31-4087-ABA0-781918DD6969.png&#34; alt=&#34;b351f0da4b0edd95e59e1581c07eaa6e&#34;  /&gt;
+&lt;img src=&#34;https://carboon.github.io/hugo&amp;#43;github.resources/1676D8DC-DB31-4087-ABA0-781918DD6969.png&#34; alt=&#34;b351f0da4b0edd95e59e1581c07eaa6e&#34;  /&gt;
 重点关注 &lt;strong&gt;config.toml&lt;/strong&gt; 与 &lt;strong&gt;themes&lt;/strong&gt;。
 config.toml:配置文件
 themes:模版&lt;/p&gt;
@@ -41,7 +41,7 @@ git clone &lt;a href=&#34;https://github.com/CaiJimmy/hugo-theme-stack.git&#34;&
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;修改配置config.yaml：
-&lt;img src=&#34;https://carboon.github.io/hugo&amp;#43;github%e6%89%93%e9%80%a0%e5%b1%9e%e4%ba%8e%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8d%9a%e5%ae%a2.resources/80EC369B-CEDB-4947-8453-3818FE4A1121.png&#34; alt=&#34;4a175bdf48e02b9a264fe7bae528dec7&#34;  /&gt;
+&lt;img src=&#34;https://carboon.github.io/hugo&amp;#43;github.resources/80EC369B-CEDB-4947-8453-3818FE4A1121.png&#34; alt=&#34;4a175bdf48e02b9a264fe7bae528dec7&#34;  /&gt;
 分别是：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;接下来要配置的github上给的地址。(等下再配置）&lt;/li&gt;
@@ -60,9 +60,9 @@ git clone &lt;a href=&#34;https://github.com/CaiJimmy/hugo-theme-stack.git&#34;&
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;）
 4 查看效果：
 mysite目录下执行 hugo server -D
-&lt;img src=&#34;https://carboon.github.io/hugo&amp;#43;github%e6%89%93%e9%80%a0%e5%b1%9e%e4%ba%8e%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8d%9a%e5%ae%a2.resources/1CAB4FC5-1847-4C72-B732-491AB46802B8.png&#34; alt=&#34;d140945a2b353a65aa9bd40e0fe96bf3&#34;  /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://carboon.github.io/hugo&amp;#43;github.resources/1CAB4FC5-1847-4C72-B732-491AB46802B8.png&#34; alt=&#34;d140945a2b353a65aa9bd40e0fe96bf3&#34;  /&gt;&lt;/p&gt;
 &lt;p&gt;浏览器打开：
-&lt;img src=&#34;https://carboon.github.io/hugo&amp;#43;github%e6%89%93%e9%80%a0%e5%b1%9e%e4%ba%8e%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8d%9a%e5%ae%a2.resources/75381AB3-C5F0-47E8-88D2-6B6B0242DB9F.png&#34; alt=&#34;28ea6e2ff912c16e4442b2a6f3661bbb&#34;  /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://carboon.github.io/hugo&amp;#43;github.resources/75381AB3-C5F0-47E8-88D2-6B6B0242DB9F.png&#34; alt=&#34;28ea6e2ff912c16e4442b2a6f3661bbb&#34;  /&gt;&lt;/p&gt;
 &lt;p&gt;5 建立静态页面，&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;
 hugo -D
@@ -72,7 +72,7 @@ hugo -D
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;新建一个github仓库。注意命名，从右上角的setting进行配置
-&lt;img src=&#34;https://carboon.github.io/hugo&amp;#43;github%e6%89%93%e9%80%a0%e5%b1%9e%e4%ba%8e%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8d%9a%e5%ae%a2.resources/BFBE0528-4E6A-4D2C-ACCD-6F40C4626019.png&#34; alt=&#34;183c06225b8546851811905278d96d9a&#34;  /&gt;
+&lt;img src=&#34;https://carboon.github.io/hugo&amp;#43;github.resources/BFBE0528-4E6A-4D2C-ACCD-6F40C4626019.png&#34; alt=&#34;183c06225b8546851811905278d96d9a&#34;  /&gt;
 theme 可以先随便选择&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -92,7 +92,7 @@ theme 可以先随便选择&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;验证
 &lt;a href=&#34;https://carboon.github.io/&#34;&gt;https://carboon.github.io/&lt;/a&gt;
-&lt;img src=&#34;https://carboon.github.io/hugo&amp;#43;github%e6%89%93%e9%80%a0%e5%b1%9e%e4%ba%8e%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8d%9a%e5%ae%a2.resources/WX20210520-175603@2x.png&#34; alt=&#34;图片&#34;  /&gt;&lt;/li&gt;
+&lt;img src=&#34;https://carboon.github.io/hugo&amp;#43;github.resources/WX20210520-175603@2x.png&#34; alt=&#34;图片&#34;  /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;到这里就成功了。&lt;/p&gt;
 &lt;h3 id=&#34;总结&#34;&gt;总结&lt;/h3&gt;

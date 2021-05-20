@@ -1,20 +1,93 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>carboon&#39;s Blog</title>
-    <link>https://carboon.github.io/</link>
-    <description>Recent content on carboon&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 18 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://carboon.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>我的第一篇博客</title>
-      <link>https://carboon.github.io/2018/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://carboon.github.io/2018/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
-      <description>这里是Markdown 正文</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Example Site</title>
+        <link>https://carboon.github.io/</link>
+        <description>Recent content on Example Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 28 Feb 2020 11:47:15 +0800</lastBuildDate><atom:link href="https://carboon.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>开博大吉</title>
+        <link>https://carboon.github.io/posts/new/</link>
+        <pubDate>Fri, 28 Feb 2020 11:47:15 +0800</pubDate>
+        
+        <guid>https://carboon.github.io/posts/new/</guid>
+        <description>&lt;h2 id=&#34;大家好&#34;&gt;大家好&lt;/h2&gt;
+&lt;p&gt;这是我的博客，希望能写一些好的文章分享给大家~~~&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://carboon.github.io/posts/hugo&#43;github%E6%89%93%E9%80%A0%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://carboon.github.io/posts/hugo&#43;github%E6%89%93%E9%80%A0%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;h2 id=&#34;hugogithub打造属于自己的博客&#34;&gt;hugo+github打造属于自己的博客&lt;/h2&gt;
+&lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
+&lt;p&gt;赋闲一阵后，在5.20日这个好日子感觉特别无聊，想着自己本地记录了一些技术文档，打算进行一次梳理，之前了解过 github可以当博客用，这次我就顺其自然，研究下怎么使用。扫了一圈，发现hugo这个工具挺不错的。简单的找了一些文档，照着做了一把。大致入了个门。在这里做一个记录，顺便也是给博客开个张。&lt;/p&gt;
+&lt;h3 id=&#34;准备工作&#34;&gt;准备工作&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;github 的账号，本地安装git&lt;/li&gt;
+&lt;li&gt;本地安装 hugo。macos 直接 brew install hugo。（hugo version查看版本确认安装成功）&lt;/li&gt;
+&lt;li&gt;hugo的一些theam 可以提前准备。具体表现就是一个目录：&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;themes&lt;/a&gt;预览后下载，我用的是 &lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/hugo-theme-stack/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;本地博客构建&#34;&gt;本地博客构建&lt;/h3&gt;
+&lt;p&gt;目的简单，本地先把静态页面生成。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在安装hugo后，找一个目录 执行： #hugo new site mysite .会生成一个目录,目录内容如下：
+&lt;img src=&#34;https://carboon.github.io/%e6%97%a0%e6%a0%87%e9%a2%98.resources/1676D8DC-DB31-4087-ABA0-781918DD6969.png&#34; alt=&#34;b351f0da4b0edd95e59e1581c07eaa6e&#34;  /&gt;
+重点关注 &lt;strong&gt;config.toml&lt;/strong&gt; 与 &lt;strong&gt;themes&lt;/strong&gt;。
+config.toml:配置文件
+themes:模版&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下载 模版 放进themes中，并进行配置：
+git clone &lt;a href=&#34;https://github.com/CaiJimmy/hugo-theme-stack.git&#34;&gt;https://github.com/CaiJimmy/hugo-theme-stack.git&lt;/a&gt; themes/stack
+其中配置，直接将 stack中的 exampleSite/config.yaml 替换 config.toml即可，（toml文件可以删除掉）
+这些方法可以参考模版提供者给的说明文档进行操作&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;修改配置config.yaml：
+&lt;img src=&#34;https://carboon.github.io/%e6%97%a0%e6%a0%87%e9%a2%98.resources/80EC369B-CEDB-4947-8453-3818FE4A1121.png&#34; alt=&#34;4a175bdf48e02b9a264fe7bae528dec7&#34;  /&gt;
+分别是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;接下来要配置的github上给的地址。(等下再配置）&lt;/li&gt;
+&lt;li&gt;模版的名字，需要和目录一致&lt;/li&gt;
+&lt;li&gt;文章目录名，提交的文章放的地方。这里是posts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3.创建第一个文章,进入 content/posts目录，（如果没有此目录则手动创建一个，编辑 new.md(文件名随意），内容如下（需要符合md的语法。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+  title: &amp;quot;开博大吉&amp;quot;
+  date: 2020-02-28T11:47:15+08:00
+  draft: true
+---
+## 大家好
+ 
+  这是我的博客，希望能写一些好的文章分享给大家~~~
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;）
+4 查看效果：
+mysite目录下执行 hugo server -D
+&lt;img src=&#34;https://carboon.github.io/%e6%97%a0%e6%a0%87%e9%a2%98.resources/1CAB4FC5-1847-4C72-B732-491AB46802B8.png&#34; alt=&#34;d140945a2b353a65aa9bd40e0fe96bf3&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;浏览器打开：
+&lt;img src=&#34;https://carboon.github.io/%e6%97%a0%e6%a0%87%e9%a2%98.resources/75381AB3-C5F0-47E8-88D2-6B6B0242DB9F.png&#34; alt=&#34;28ea6e2ff912c16e4442b2a6f3661bbb&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;5 建立静态页面，&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo -D
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这里会生成一个public目录，这个目录实际上就是一个网站。&lt;/p&gt;
+&lt;p&gt;到这里本地博客构建成功.下面我们把博客上传到github&lt;/p&gt;
+&lt;h3 id=&#34;github-上传&#34;&gt;github 上传&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;新建一个github仓库。注意命名，从右上角的setting进行配置
+&lt;img src=&#34;https://carboon.github.io/%e6%97%a0%e6%a0%87%e9%a2%98.resources/BFBE0528-4E6A-4D2C-ACCD-6F40C4626019.png&#34; alt=&#34;183c06225b8546851811905278d96d9a&#34;  /&gt;
+theme 可以先随便选择&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

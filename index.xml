@@ -60,9 +60,9 @@ git clone &lt;a href=&#34;https://github.com/CaiJimmy/hugo-theme-stack.git&#34;&
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;）
 4 查看效果：
 mysite目录下执行 hugo server -D
-&lt;img src=&#34;https://carboon.github.io/posts/hugo&amp;#43;github.resources/1CAB4FC5-1847-4C72-B732-491AB46802B8.png&#34; alt=&#34;d140945a2b353a65aa9bd40e0fe96bf3&#34;  /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://carboon.github.io/1CAB4FC5-1847-4C72-B732-491AB46802B8.png&#34; alt=&#34;d140945a2b353a65aa9bd40e0fe96bf3&#34;  /&gt;&lt;/p&gt;
 &lt;p&gt;浏览器打开：
-&lt;img src=&#34;https://carboon.github.io/posts/hugo&amp;#43;github.resources/75381AB3-C5F0-47E8-88D2-6B6B0242DB9F.png&#34; alt=&#34;28ea6e2ff912c16e4442b2a6f3661bbb&#34;  /&gt;&lt;/p&gt;
+&lt;img src=&#34;https://carboon.github.io/75381AB3-C5F0-47E8-88D2-6B6B0242DB9F.png&#34; alt=&#34;28ea6e2ff912c16e4442b2a6f3661bbb&#34;  /&gt;&lt;/p&gt;
 &lt;p&gt;5 建立静态页面，&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;
 hugo -D
@@ -72,7 +72,7 @@ hugo -D
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;新建一个github仓库。注意命名，从右上角的setting进行配置
-&lt;img src=&#34;https://carboon.github.io/hugo&amp;#43;github.resources/BFBE0528-4E6A-4D2C-ACCD-6F40C4626019.png&#34; alt=&#34;183c06225b8546851811905278d96d9a&#34;  /&gt;
+&lt;img src=&#34;https://carboon.github.io/BFBE0528-4E6A-4D2C-ACCD-6F40C4626019.png&#34; alt=&#34;183c06225b8546851811905278d96d9a&#34;  /&gt;
 theme 可以先随便选择&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;

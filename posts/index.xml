@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Example Site</title>
-    <link>https://carboon.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Example Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 May 2021 18:13:15 +0800</lastBuildDate><atom:link href="https://carboon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 May 2021 18:13:15 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo&#43;github打造属于自己的博客</title>
-      <link>https://carboon.github.io/posts/hugo&#43;github/</link>
+      <link>http://localhost:1313/posts/hugo&#43;github/</link>
       <pubDate>Thu, 20 May 2021 18:13:15 +0800</pubDate>
       
-      <guid>https://carboon.github.io/posts/hugo&#43;github/</guid>
+      <guid>http://localhost:1313/posts/hugo&#43;github/</guid>
       <description>hugo+github打造属于自己的博客 背景 赋闲一阵后，在5.20日这个好日子感觉特别无聊，想着自己本地记录了一些技术文档，打算进行一次梳理，之前了解过 github可以当博客用，这次我就顺其自然，研究下怎么使用。扫了一圈，发现hugo这个工具挺不错的。简单的找了一些文档，照着做了一把。大致入了个门。在这里做一个记录，顺便也是给博客开个张。
 准备工作  github 的账号，本地安装git 本地安装 hugo。macos 直接 brew install hugo。（hugo version查看版本确认安装成功） hugo的一些theam 可以提前准备。具体表现就是一个目录：themes预览后下载，我用的是 stack  本地博客构建 目的简单，本地先把静态页面生成。
   在安装hugo后，找一个目录 执行： #hugo new site mysite .会生成一个目录,目录内容如下： 重点关注 config.toml 与 themes。 config.toml:配置文件 themes:模版
@@ -24,10 +24,10 @@
     
     <item>
       <title>开博大吉</title>
-      <link>https://carboon.github.io/posts/new/</link>
+      <link>http://localhost:1313/posts/new/</link>
       <pubDate>Fri, 28 Feb 2020 11:47:15 +0800</pubDate>
       
-      <guid>https://carboon.github.io/posts/new/</guid>
+      <guid>http://localhost:1313/posts/new/</guid>
       <description>大家好 这是我的博客，希望能写一些好的文章分享给大家~~~</description>
     </item>
     

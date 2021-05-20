@@ -161,7 +161,7 @@
 <ol>
 <li>
 <p>在安装hugo后，找一个目录 执行： #hugo new site mysite .会生成一个目录,目录内容如下：
-<img src="/%e6%97%a0%e6%a0%87%e9%a2%98.resources/1676D8DC-DB31-4087-ABA0-781918DD6969.png" alt="b351f0da4b0edd95e59e1581c07eaa6e"  />
+<img src="/hugo&#43;github%e6%89%93%e9%80%a0%e5%b1%9e%e4%ba%8e%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8d%9a%e5%ae%a2.resources/1676D8DC-DB31-4087-ABA0-781918DD6969.png" alt="b351f0da4b0edd95e59e1581c07eaa6e"  />
 重点关注 <strong>config.toml</strong> 与 <strong>themes</strong>。
 config.toml:配置文件
 themes:模版</p>
@@ -174,7 +174,7 @@ git clone <a href="https://github.com/CaiJimmy/hugo-theme-stack.git">https://git
 </li>
 </ol>
 <p>修改配置config.yaml：
-<img src="/%e6%97%a0%e6%a0%87%e9%a2%98.resources/80EC369B-CEDB-4947-8453-3818FE4A1121.png" alt="4a175bdf48e02b9a264fe7bae528dec7"  />
+<img src="/hugo&#43;github%e6%89%93%e9%80%a0%e5%b1%9e%e4%ba%8e%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8d%9a%e5%ae%a2.resources/80EC369B-CEDB-4947-8453-3818FE4A1121.png" alt="4a175bdf48e02b9a264fe7bae528dec7"  />
 分别是：</p>
 <ul>
 <li>接下来要配置的github上给的地址。(等下再配置）</li>
@@ -188,26 +188,60 @@ git clone <a href="https://github.com/CaiJimmy/hugo-theme-stack.git">https://git
   draft: true
 ---
 ## 大家好
- 
+
   这是我的博客，希望能写一些好的文章分享给大家~~~
 </code></pre><p>）
 4 查看效果：
 mysite目录下执行 hugo server -D
-<img src="/%e6%97%a0%e6%a0%87%e9%a2%98.resources/1CAB4FC5-1847-4C72-B732-491AB46802B8.png" alt="d140945a2b353a65aa9bd40e0fe96bf3"  /></p>
+<img src="/hugo&#43;github%e6%89%93%e9%80%a0%e5%b1%9e%e4%ba%8e%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8d%9a%e5%ae%a2.resources/1CAB4FC5-1847-4C72-B732-491AB46802B8.png" alt="d140945a2b353a65aa9bd40e0fe96bf3"  /></p>
 <p>浏览器打开：
-<img src="/%e6%97%a0%e6%a0%87%e9%a2%98.resources/75381AB3-C5F0-47E8-88D2-6B6B0242DB9F.png" alt="28ea6e2ff912c16e4442b2a6f3661bbb"  /></p>
+<img src="/hugo&#43;github%e6%89%93%e9%80%a0%e5%b1%9e%e4%ba%8e%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8d%9a%e5%ae%a2.resources/75381AB3-C5F0-47E8-88D2-6B6B0242DB9F.png" alt="28ea6e2ff912c16e4442b2a6f3661bbb"  /></p>
 <p>5 建立静态页面，</p>
-<pre><code>hugo -D
+<pre><code>
+hugo -D
 </code></pre><p>这里会生成一个public目录，这个目录实际上就是一个网站。</p>
 <p>到这里本地博客构建成功.下面我们把博客上传到github</p>
 <h3 id="github-上传">github 上传</h3>
 <ol>
 <li>
 <p>新建一个github仓库。注意命名，从右上角的setting进行配置
-<img src="/%e6%97%a0%e6%a0%87%e9%a2%98.resources/BFBE0528-4E6A-4D2C-ACCD-6F40C4626019.png" alt="183c06225b8546851811905278d96d9a"  />
+<img src="/hugo&#43;github%e6%89%93%e9%80%a0%e5%b1%9e%e4%ba%8e%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8d%9a%e5%ae%a2.resources/BFBE0528-4E6A-4D2C-ACCD-6F40C4626019.png" alt="183c06225b8546851811905278d96d9a"  />
 theme 可以先随便选择</p>
 </li>
-<li></li>
+<li>
+<p>验证一下是否可用：浏览器直接输入 url，比如这里我用的 <a href="http://carboon.github.io/">http://carboon.github.io/</a> 如果不可用，那么可能就是名字命名问题。</p>
+</li>
+<li>
+<p>接下来将仓库 git clone到本地</p>
+</li>
+</ol>
+<pre><code>git clone git@github.com:carboon/carboon.github.io.git public
+</code></pre><p>注意，命令在mysite目录下执行，且仓库本地需要命名必须为public。</p>
+<ol start="4">
+<li>生成博客内容并提交</li>
+</ol>
+<pre><code>hugo -D
+</code></pre><p>执行后，发现public目录多了很多内容，然后执行 commit/push 提交</p>
+<ol start="5">
+<li>验证
+<a href="https://carboon.github.io/">https://carboon.github.io/</a>
+<img src="/hugo&#43;github%e6%89%93%e9%80%a0%e5%b1%9e%e4%ba%8e%e8%87%aa%e5%b7%b1%e7%9a%84%e5%8d%9a%e5%ae%a2.resources/WX20210520-175603@2x.png" alt="图片"  /></li>
+</ol>
+<p>到这里就成功了。</p>
+<h3 id="总结">总结</h3>
+<p>过程不复杂，逻辑顺序是，先本地生成博客，再进行github的pages功能进行上传展示。
+博客内容分两部分，一个是要输出的文档，另一个是博客的源码。源码框架部分基于hugo生成。文档是核心输出件，比如这个文章。</p>
+<p>最后工作流是这样：</p>
+<ol>
+<li>
+<p>vscode 指定路径为POSTS目录，编辑md文档后保存</p>
+</li>
+<li>
+<p>执行 hugo -D 更新public目录</p>
+</li>
+<li>
+<p>提交到github，我使用的是github desktop工具</p>
+</li>
 </ol>
 
 </section>

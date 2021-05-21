@@ -171,7 +171,7 @@
 <ol>
 <li>
 <p>在安装hugo后，找一个目录 执行： #hugo new site mysite .会生成一个目录,目录内容如下：
-<img src="/1676D8DC-DB31-4087-ABA0-781918DD6969.png" alt="图片"  />
+<img src="https://github-1305981322.cos.ap-guangzhou.myqcloud.com/img/1676D8DC-DB31-4087-ABA0-781918DD6969.png" alt="图片"  />
 重点关注 <strong>config.toml</strong> 与 <strong>themes</strong>。
 config.toml:配置文件
 themes:模版</p>
@@ -184,7 +184,7 @@ git clone <a href="https://github.com/CaiJimmy/hugo-theme-stack.git">https://git
 </li>
 </ol>
 <p>修改配置config.yaml：
-<img src="/80EC369B-CEDB-4947-8453-3818FE4A1121.png" alt="图片"  />
+<img src="https://github-1305981322.cos.ap-guangzhou.myqcloud.com/img/80EC369B-CEDB-4947-8453-3818FE4A1121.png" alt="图片"  />
 分别是：</p>
 <ul>
 <li>接下来要配置的github上给的地址。(等下再配置）</li>
@@ -235,31 +235,57 @@ theme 可以先随便选择</p>
 <ol start="5">
 <li>验证
 <a href="https://carboon.github.io/">https://carboon.github.io/</a>
-<img src="/WX20210520-175603@2x.png" alt="图片"  /></li>
+<img src="https://github-1305981322.cos.ap-guangzhou.myqcloud.com/img/WX20210520-175603@2x.png" alt="图片"  /></li>
 </ol>
 <p>到这里就成功了。</p>
 <h3 id="改进">改进</h3>
 <ol>
 <li>
 <p>优化工作流: 本地编辑文档，然后更新public文档，然后再提交到github。虽然已经比较方便，但是涉及到三处操作。现在看能否精简一下。typora自身没有编辑后自动执行脚本的能力。所以只能合并后面两个流程，脚本如下：</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">   
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>   
+<span class="nb">echo</span> -e <span class="s2">&#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;</span>
+   
+<span class="c1"># Build the project.</span>
+hugo <span class="c1"># if using a theme, replace by `hugo -t &lt;yourtheme&gt;`</span>
+   
+<span class="c1"># Go To Public folder</span>
+<span class="nb">cd</span> public
+<span class="c1"># Add changes to git.</span>
+git add -A
+   
+<span class="c1"># Commit changes.</span>
+<span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;rebuilding site `date`&#34;</span>
+   
+<span class="k">if</span> <span class="o">[[</span> <span class="nv">$#</span> -eq <span class="m">1</span> <span class="o">]]</span><span class="p">;</span><span class="k">then</span>
+  <span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
+<span class="k">fi</span>
+   
+git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
+   
+<span class="c1"># Push source and build repos.</span>
+git push origin main
+   
+<span class="c1"># Come Back</span>
+<span class="nb">cd</span> ..
 </code></pre></div></li>
+<li>
+<p>后面发现照片管理比较费事，调试本地md图片目录的路径和hugo图片路径就搞了很久。最终决定采用 云服务+picgo+typora模式。</p>
+<p>具体操作不赘述。主要涉及：买腾讯云服务，包括cos（cloud object storage）+腾讯云api密钥配置。picgo设置，与腾讯云进行关联，typora在偏好设置中图片设置，拷贝照片进来时，自动上传。这样就实现了一键管理，也不需要再维护一个本地相册。</p>
+</li>
 </ol>
 <h3 id="总结">总结</h3>
-<p>过程不复杂，逻辑顺序是，先本地生成博客，再进行github的pages功能进行上传展示。
-博客内容分两部分，一个是要输出的文档，另一个是博客的源码。源码框架部分基于hugo生成。文档是核心输出件，比如这个文章。</p>
-<p>最后工作流是这样：</p>
-<ol>
-<li>
-<p>vscode 指定路径为POSTS目录，编辑md文档后保存</p>
-</li>
-<li>
-<p>执行 hugo -D 更新public目录</p>
-</li>
-<li>
-<p>提交到github，我使用的是github desktop工具</p>
-</li>
-</ol>
+<p>如果把“搭建一个博客”作为一个项目主题，目前基本上完成，也进行了易用性加强的迭代。最终我们实现了一个typora编辑，github pages 托管与呈现，hugo进行静态页面生成，picGo与腾讯云进行图片管理。脚本一键发布，诸如此类特性的一个功能。大部分都在网上有现成的教案。</p>
+<p>方案对比：</p>
+<ul>
+<li>完全自助的博客管理（成本过高）</li>
+<li>印象笔记，markdown非常不成熟，md编辑非常延迟，无解。</li>
+<li>vscode编辑，经过测试，也非常推荐，唯一美中不足，就是插件市场中的插件，复制用的是command+option+p，不太方便，command+option+o 可以传对象，也比较方便，作为博客来讲，还暂时用不上音视频之类的富媒体）</li>
+</ul>
+<p>后续计划：</p>
+<ul>
+<li>继续试用一下，看看哪些可以进一步用来提升博客管理的个人体验</li>
+</ul>
 
 </section>
 

@@ -28,7 +28,7 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;在安装hugo后，找一个目录 执行： #hugo new site mysite .会生成一个目录,目录内容如下：
-&lt;img src=&#34;https://carboon.github.io/1676D8DC-DB31-4087-ABA0-781918DD6969.png&#34; alt=&#34;图片&#34;  /&gt;
+&lt;img src=&#34;https://github-1305981322.cos.ap-guangzhou.myqcloud.com/img/1676D8DC-DB31-4087-ABA0-781918DD6969.png&#34; alt=&#34;图片&#34;  /&gt;
 重点关注 &lt;strong&gt;config.toml&lt;/strong&gt; 与 &lt;strong&gt;themes&lt;/strong&gt;。
 config.toml:配置文件
 themes:模版&lt;/p&gt;
@@ -41,7 +41,7 @@ git clone &lt;a href=&#34;https://github.com/CaiJimmy/hugo-theme-stack.git&#34;&
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;修改配置config.yaml：
-&lt;img src=&#34;https://carboon.github.io/80EC369B-CEDB-4947-8453-3818FE4A1121.png&#34; alt=&#34;图片&#34;  /&gt;
+&lt;img src=&#34;https://github-1305981322.cos.ap-guangzhou.myqcloud.com/img/80EC369B-CEDB-4947-8453-3818FE4A1121.png&#34; alt=&#34;图片&#34;  /&gt;
 分别是：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;接下来要配置的github上给的地址。(等下再配置）&lt;/li&gt;
@@ -92,31 +92,57 @@ theme 可以先随便选择&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;验证
 &lt;a href=&#34;https://carboon.github.io/&#34;&gt;https://carboon.github.io/&lt;/a&gt;
-&lt;img src=&#34;https://carboon.github.io/WX20210520-175603@2x.png&#34; alt=&#34;图片&#34;  /&gt;&lt;/li&gt;
+&lt;img src=&#34;https://github-1305981322.cos.ap-guangzhou.myqcloud.com/img/WX20210520-175603@2x.png&#34; alt=&#34;图片&#34;  /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;到这里就成功了。&lt;/p&gt;
 &lt;h3 id=&#34;改进&#34;&gt;改进&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;优化工作流: 本地编辑文档，然后更新public文档，然后再提交到github。虽然已经比较方便，但是涉及到三处操作。现在看能否精简一下。typora自身没有编辑后自动执行脚本的能力。所以只能合并后面两个流程，脚本如下：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;   
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;   
+&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;\033[0;32mDeploying updates to GitHub...\033[0m&amp;#34;&lt;/span&gt;
+   
+&lt;span class=&#34;c1&#34;&gt;# Build the project.&lt;/span&gt;
+hugo &lt;span class=&#34;c1&#34;&gt;# if using a theme, replace by `hugo -t &amp;lt;yourtheme&amp;gt;`&lt;/span&gt;
+   
+&lt;span class=&#34;c1&#34;&gt;# Go To Public folder&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; public
+&lt;span class=&#34;c1&#34;&gt;# Add changes to git.&lt;/span&gt;
+git add -A
+   
+&lt;span class=&#34;c1&#34;&gt;# Commit changes.&lt;/span&gt;
+&lt;span class=&#34;nv&#34;&gt;msg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;rebuilding site `date`&amp;#34;&lt;/span&gt;
+   
+&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[[&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$#&lt;/span&gt; -eq &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+  &lt;span class=&#34;nv&#34;&gt;msg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$1&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+   
+git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$msg&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+   
+&lt;span class=&#34;c1&#34;&gt;# Push source and build repos.&lt;/span&gt;
+git push origin main
+   
+&lt;span class=&#34;c1&#34;&gt;# Come Back&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ..
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;后面发现照片管理比较费事，调试本地md图片目录的路径和hugo图片路径就搞了很久。最终决定采用 云服务+picgo+typora模式。&lt;/p&gt;
+&lt;p&gt;具体操作不赘述。主要涉及：买腾讯云服务，包括cos（cloud object storage）+腾讯云api密钥配置。picgo设置，与腾讯云进行关联，typora在偏好设置中图片设置，拷贝照片进来时，自动上传。这样就实现了一键管理，也不需要再维护一个本地相册。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;总结&#34;&gt;总结&lt;/h3&gt;
-&lt;p&gt;过程不复杂，逻辑顺序是，先本地生成博客，再进行github的pages功能进行上传展示。
-博客内容分两部分，一个是要输出的文档，另一个是博客的源码。源码框架部分基于hugo生成。文档是核心输出件，比如这个文章。&lt;/p&gt;
-&lt;p&gt;最后工作流是这样：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;vscode 指定路径为POSTS目录，编辑md文档后保存&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;执行 hugo -D 更新public目录&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;提交到github，我使用的是github desktop工具&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;如果把“搭建一个博客”作为一个项目主题，目前基本上完成，也进行了易用性加强的迭代。最终我们实现了一个typora编辑，github pages 托管与呈现，hugo进行静态页面生成，picGo与腾讯云进行图片管理。脚本一键发布，诸如此类特性的一个功能。大部分都在网上有现成的教案。&lt;/p&gt;
+&lt;p&gt;方案对比：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;完全自助的博客管理（成本过高）&lt;/li&gt;
+&lt;li&gt;印象笔记，markdown非常不成熟，md编辑非常延迟，无解。&lt;/li&gt;
+&lt;li&gt;vscode编辑，经过测试，也非常推荐，唯一美中不足，就是插件市场中的插件，复制用的是command+option+p，不太方便，command+option+o 可以传对象，也比较方便，作为博客来讲，还暂时用不上音视频之类的富媒体）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;后续计划：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;继续试用一下，看看哪些可以进一步用来提升博客管理的个人体验&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>

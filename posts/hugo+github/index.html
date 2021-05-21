@@ -215,7 +215,7 @@ hugo -D
 <ol>
 <li>
 <p>新建一个github仓库。注意命名，从右上角的setting进行配置
-<img src="/BFBE0528-4E6A-4D2C-ACCD-6F40C4626019.png" alt="图片"  />
+<!-- raw HTML omitted -->
 theme 可以先随便选择</p>
 </li>
 <li>
@@ -238,6 +238,13 @@ theme 可以先随便选择</p>
 <img src="/WX20210520-175603@2x.png" alt="图片"  /></li>
 </ol>
 <p>到这里就成功了。</p>
+<h3 id="改进">改进</h3>
+<ol>
+<li>
+<p>优化工作流: 本地编辑文档，然后更新public文档，然后再提交到github。虽然已经比较方便，但是涉及到三处操作。现在看能否精简一下。typora自身没有编辑后自动执行脚本的能力。所以只能合并后面两个流程，脚本如下：</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">   
+</code></pre></div></li>
+</ol>
 <h3 id="总结">总结</h3>
 <p>过程不复杂，逻辑顺序是，先本地生成博客，再进行github的pages功能进行上传展示。
 博客内容分两部分，一个是要输出的文档，另一个是博客的源码。源码框架部分基于hugo生成。文档是核心输出件，比如这个文章。</p>

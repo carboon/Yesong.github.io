@@ -1,29 +1,30 @@
 
 <!DOCTYPE html>
-<html lang="en" data-figures="">
+<html lang="en" data-figures="" class="page">
   <head>
-<title>Tags | </title>
+<title>Hugo迭代演进 | </title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="">
+<meta name="description" content="1. 2021-05-21 增加评论功能 难点在于找到的一个discus组件，居然被墙了。原理很简单，就是将评论的内容，挂给第三方，直接读写在第三方论坛里面就可以。联想一下，查看墙内的用法。结果发现一个 valine 比较好用。
+参照Hugo中加入Valine评论功能进行处理，但是给的模版范例不太一样。为了快速上线评论 …">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="Tags" />
-<meta property="og:url" content="https://carboon.github.io/tags/" />
-<meta property="og:title" content="Tags" />
-<meta property="og:description" content="" />
+<meta name="twitter:title" content="Hugo迭代演进" />
+<meta property="og:url" content="https://carboon.github.io/posts/hugo%E8%BF%AD%E4%BB%A3%E6%BC%94%E8%BF%9B/" />
+<meta property="og:title" content="Hugo迭代演进" />
+<meta property="og:description" content="1. 2021-05-21 增加评论功能 难点在于找到的一个discus组件，居然被墙了。原理很简单，就是将评论的内容，挂给第三方，直接读写在第三方论坛里面就可以。联想一下，查看墙内的用法。结果发现一个 valine 比较好用。
+参照Hugo中加入Valine评论功能进行处理，但是给的模版范例不太一样。为了快速上线评论 …" />
 <meta property="og:image" content="https://carboon.github.io/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://carboon.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://carboon.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://carboon.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://carboon.github.io/tags/">
-<link rel="alternate" type="application/rss+xml" href="https://carboon.github.io/tags/index.xml" title="" />
+<link rel="canonical" href="https://carboon.github.io/posts/hugo%E8%BF%AD%E4%BB%A3%E6%BC%94%E8%BF%9B/">
 
     
 
@@ -73,21 +74,75 @@
 </header>
 
     <main>
-
+  
 <div class="grid-inverse wrap content">
-  <ul class="posts" id="posts">
-    <li>
+  <article class="post_content">
+    <h1 class="post_title">Hugo迭代演进</h1>
+  <div class="post_meta">
+    <span><svg class="icon">
+  <use xlink:href="#calendar"></use>
+</svg></span>
+    <span class="post_date">
+      May 21, 2021</span>
+    <span class="post_time"> · 1 min read</span>
+    <span class="page_only">&nbsp;·
+  <div class="post_share">
+    Share on:
+    <a href="https://twitter.com/intent/tweet?text=Hugo%e8%bf%ad%e4%bb%a3%e6%bc%94%e8%bf%9b&url=https%3a%2f%2fcarboon.github.io%2fposts%2fhugo%25E8%25BF%25AD%25E4%25BB%25A3%25E6%25BC%2594%25E8%25BF%259B%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <use xlink:href="#twitter"></use>
+</svg>
+    </a>
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fcarboon.github.io%2fposts%2fhugo%25E8%25BF%25AD%25E4%25BB%25A3%25E6%25BC%2594%25E8%25BF%259B%2f&t=Hugo%e8%bf%ad%e4%bb%a3%e6%bc%94%e8%bf%9b" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+      <svg class="icon">
+  <use xlink:href="#facebook"></use>
+</svg>
+    </a>
+    <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow">
+      <svg class="icon">
+  <use xlink:href="#linkedin"></use>
+</svg>
+    </a>
+    <a href="https://carboon.github.io/posts/hugo%E8%BF%AD%E4%BB%A3%E6%BC%94%E8%BF%9B/" title="Copy Link" class="link link_yank">
+      <svg class="icon">
+  <use xlink:href="#copy"></use>
+</svg>
+    </a>
+  </div>
+  </span>
+  </div>
+
+    
+    <h2 id="1-2021-05-21-增加评论功能">1. 2021-05-21 增加评论功能</h2>
+<p>难点在于找到的一个discus组件，居然被墙了。原理很简单，就是将评论的内容，挂给第三方，直接读写在第三方论坛里面就可以。联想一下，查看墙内的用法。结果发现一个 valine 比较好用。</p>
+<p>参照<a href="http://inner-peace.cn/blog/hugo_valine/">Hugo中加入Valine评论功能</a>进行处理，但是给的模版范例不太一样。为了快速上线评论功能，于是把模版又更新了一把。现在有了评论功能了。开心～</p>
+<p>需要在 <a href="https://console.leancloud.cn/apps/S6pdpHK4l4LPLloXeQeoibI7-gzGzoHsz/settings/keys">leancloud</a> 上注册账号，我用的免费版，不知道以后会不会收费，会不会挂掉。</p>
 
 
-    </li>
-  </ul>
+<span id="/posts/hugo%E8%BF%AD%E4%BB%A3%E6%BC%94%E8%BF%9B/" class="leancloud_visitors" data-flag-title="Hugo迭代演进">
+<p></p>
+</span>
+<div id="vcomments"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script type="text/javascript">
+new Valine({
+    el: '#vcomments' ,
+    appId: 'S6pdpHK4l4LPLloXeQeoibI7-gzGzoHsz',
+    appKey: 'XPOkFeG4aaujTQvNdEmn9sx2',
+    notify:  false , 
+    verify:  false , 
+    avatar:'mm', 
+    placeholder: '留下点什么吧...',
+    visitor:  true 
+});
+</script>
+
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
-      <li>
-        <a href="https://carboon.github.io/posts/hugo%E8%BF%AD%E4%BB%A3%E6%BC%94%E8%BF%9B/" class="nav-link" title="Hugo迭代演进">Hugo迭代演进</a>
-      </li>
       <li>
         <a href="https://carboon.github.io/posts/%E5%B8%B8%E8%A7%81%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4%E6%9D%82%E7%89%A9%E7%AE%B1/" class="nav-link" title="常见工具命令杂物箱">常见工具命令杂物箱</a>
       </li>
@@ -101,9 +156,8 @@
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>

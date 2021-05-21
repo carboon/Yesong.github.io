@@ -6,7 +6,24 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 21 May 2021 13:37:07 +0800</lastBuildDate><atom:link href="https://carboon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 May 2021 21:33:43 +0800</lastBuildDate><atom:link href="https://carboon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo迭代演进</title>
+      <link>https://carboon.github.io/posts/hugo%E8%BF%AD%E4%BB%A3%E6%BC%94%E8%BF%9B/</link>
+      <pubDate>Fri, 21 May 2021 21:33:43 +0800</pubDate>
+      
+      <guid>https://carboon.github.io/posts/hugo%E8%BF%AD%E4%BB%A3%E6%BC%94%E8%BF%9B/</guid>
+      <description>
+        
+          &lt;h2 id=&#34;1-2021-05-21-增加评论功能&#34;&gt;1. 2021-05-21 增加评论功能&lt;/h2&gt;
+&lt;p&gt;难点在于找到的一个discus组件，居然被墙了。原理很简单，就是将评论的内容，挂给第三方，直接读写在第三方论坛里面就可以。联想一下，查看墙内的用法。结果发现一个 valine 比较好用。&lt;/p&gt;
+&lt;p&gt;参照&lt;a href=&#34;http://inner-peace.cn/blog/hugo_valine/&#34;&gt;Hugo中加入Valine评论功能&lt;/a&gt;进行处理，但是给的模版范例不太一样。为了快速上线评论功能，于是把模版又更新了一把。现在有了评论功能了。开心～&lt;/p&gt;
+&lt;p&gt;需要在 &lt;a href=&#34;https://console.leancloud.cn/apps/S6pdpHK4l4LPLloXeQeoibI7-gzGzoHsz/settings/keys&#34;&gt;leancloud&lt;/a&gt; 上注册账号，我用的免费版，不知道以后会不会收费，会不会挂掉。&lt;/p&gt;
+
+        
+      </description>
+    </item>
+    
     <item>
       <title>常见工具命令杂物箱</title>
       <link>https://carboon.github.io/posts/%E5%B8%B8%E8%A7%81%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4%E6%9D%82%E7%89%A9%E7%AE%B1/</link>

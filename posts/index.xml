@@ -6,7 +6,24 @@
     <description>Recent content in Posts on Example Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 May 2021 18:13:15 +0800</lastBuildDate><atom:link href="https://carboon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 May 2021 13:37:07 +0800</lastBuildDate><atom:link href="https://carboon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>常见工具命令杂物箱</title>
+      <link>https://carboon.github.io/posts/hugo/</link>
+      <pubDate>Fri, 21 May 2021 13:37:07 +0800</pubDate>
+      
+      <guid>https://carboon.github.io/posts/hugo/</guid>
+      <description>工具命令杂物箱 背景 常见工具的使用，将案例和场景进行汇总，后续都丢到这里来。初步包括shell 命令，git命令，ide的使用等等
+hugo 官方文档 在此，基本上都是够用的
+  安装
+$ brew install hugo   生成站点， 用一次后面就基本上不会再用第二次，而且还需要额外配置。
+$ hugo new site /path/to/site   创建一个 新的 文档 about，主要是附带了时间戳，注意修改完毕后，把draft改为 false
+$ hugo new about.md   本地运行hugo进行调试确认.后面默认，如果在config文件中配置完毕，不需要加
+$ hugo server --theme=hyde --buildDrafts   最终部署。如果在config文件中配置完毕，不需要加配置
+$ hugo --theme=hyde --baseUrl=&amp;quot;http://coderzh.github.io/&amp;quot; 执行完毕后，会生成public中的静态文件，这些文件提交到github上即可进行展示。
+  </description>
+    </item>
+    
     <item>
       <title>hugo&#43;github</title>
       <link>https://carboon.github.io/posts/hugo&#43;github/</link>

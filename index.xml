@@ -6,7 +6,44 @@
         <description>Recent content on Example Site</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 20 May 2021 18:13:15 +0800</lastBuildDate><atom:link href="https://carboon.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 21 May 2021 13:37:07 +0800</lastBuildDate><atom:link href="https://carboon.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>常见工具命令杂物箱</title>
+        <link>https://carboon.github.io/posts/hugo/</link>
+        <pubDate>Fri, 21 May 2021 13:37:07 +0800</pubDate>
+        
+        <guid>https://carboon.github.io/posts/hugo/</guid>
+        <description>&lt;h1 id=&#34;工具命令杂物箱&#34;&gt;工具命令杂物箱&lt;/h1&gt;
+&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+&lt;p&gt;常见工具的使用，将案例和场景进行汇总，后续都丢到这里来。初步包括shell 命令，git命令，ide的使用等等&lt;/p&gt;
+&lt;h2 id=&#34;hugo&#34;&gt;hugo&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.gohugo.org/%c2%a0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官方文档&lt;/a&gt; 在此，基本上都是够用的&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ brew install hugo
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;生成站点， 用一次后面就基本上不会再用第二次，而且还需要额外配置。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ hugo new site /path/to/site
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建一个 新的 文档 about，主要是附带了时间戳，注意修改完毕后，把draft改为 false&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ hugo new about.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;本地运行hugo进行调试确认.后面默认，如果在config文件中配置完毕，不需要加&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ hugo server --theme=hyde --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最终部署。如果在config文件中配置完毕，不需要加配置&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ hugo --theme=hyde --baseUrl=&amp;quot;http://coderzh.github.io/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;执行完毕后，会生成public中的静态文件，这些文件提交到github上即可进行展示。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>hugo&#43;github</title>
         <link>https://carboon.github.io/posts/hugo&#43;github/</link>
         <pubDate>Thu, 20 May 2021 18:13:15 +0800</pubDate>

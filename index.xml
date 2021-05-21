@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>船长的自习室</title>
-        <link>https://carboon.github.io/</link>
-        <description>Recent content on 船长的自习室</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Fri, 21 May 2021 13:37:07 +0800</lastBuildDate><atom:link href="https://carboon.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>常见工具命令杂物箱</title>
-        <link>https://carboon.github.io/posts/%E5%B8%B8%E8%A7%81%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4%E6%9D%82%E7%89%A9%E7%AE%B1/</link>
-        <pubDate>Fri, 21 May 2021 13:37:07 +0800</pubDate>
+  <channel>
+    <title></title>
+    <link>https://example.com/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 21 May 2021 13:37:07 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>常见工具命令杂物箱</title>
+      <link>https://example.com/posts/%E5%B8%B8%E8%A7%81%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4%E6%9D%82%E7%89%A9%E7%AE%B1/</link>
+      <pubDate>Fri, 21 May 2021 13:37:07 +0800</pubDate>
+      
+      <guid>https://example.com/posts/%E5%B8%B8%E8%A7%81%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4%E6%9D%82%E7%89%A9%E7%AE%B1/</guid>
+      <description>
         
-        <guid>https://carboon.github.io/posts/%E5%B8%B8%E8%A7%81%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4%E6%9D%82%E7%89%A9%E7%AE%B1/</guid>
-        <description>&lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
+          &lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
 &lt;p&gt;工作学习常见工具的使用，将案例和场景进行汇总，后续都丢到这里来。初步包括shell 命令，git命令，ide的使用等等&lt;/p&gt;
 &lt;h4 id=&#34;hugo&#34;&gt;hugo&lt;/h4&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.gohugo.org/%c2%a0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;官方文档&lt;/a&gt; 在此。基本上照搬&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.gohugo.org/%C2%A0&#34;&gt;官方文档&lt;/a&gt; 在此。基本上照搬&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;安装&lt;/p&gt;
@@ -41,31 +43,34 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>hugo&#43;github</title>
-        <link>https://carboon.github.io/posts/hugo&#43;github/</link>
-        <pubDate>Thu, 20 May 2021 18:13:15 +0800</pubDate>
+
         
-        <guid>https://carboon.github.io/posts/hugo&#43;github/</guid>
-        <description>&lt;h2 id=&#34;hugogithub&#34;&gt;hugo+github&lt;/h2&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>hugo&#43;github</title>
+      <link>https://example.com/posts/hugo&#43;github/</link>
+      <pubDate>Thu, 20 May 2021 18:13:15 +0800</pubDate>
+      
+      <guid>https://example.com/posts/hugo&#43;github/</guid>
+      <description>
+        
+          &lt;h2 id=&#34;hugogithub&#34;&gt;hugo+github&lt;/h2&gt;
 &lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;
 &lt;p&gt;赋闲一阵后，在5.20日这个好日子感觉特别无聊，想着自己本地记录了一些技术文档，打算进行一次梳理，之前了解过 github可以当博客用，这次我就顺其自然，研究下怎么使用。扫了一圈，发现hugo这个工具挺不错的。简单的找了一些文档，照着做了一把。大致入了个门。在这里做一个记录，顺便也是给博客开个张。&lt;/p&gt;
 &lt;h3 id=&#34;准备工作&#34;&gt;准备工作&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;github 的账号，本地安装git&lt;/li&gt;
 &lt;li&gt;本地安装 hugo。macos 直接 brew install hugo。（hugo version查看版本确认安装成功）&lt;/li&gt;
-&lt;li&gt;hugo的一些theam 可以提前准备。具体表现就是一个目录：&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;themes&lt;/a&gt;预览后下载，我用的是 &lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/hugo-theme-stack/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;stack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;hugo的一些theam 可以提前准备。具体表现就是一个目录：&lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;themes&lt;/a&gt;预览后下载，我用的是 &lt;a href=&#34;https://themes.gohugo.io/hugo-theme-stack/&#34;&gt;stack&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;本地博客构建&#34;&gt;本地博客构建&lt;/h3&gt;
 &lt;p&gt;目的简单，本地先把静态页面生成。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;在安装hugo后，找一个目录 执行： #hugo new site mysite .会生成一个目录,目录内容如下：
-&lt;img src=&#34;https://github-1305981322.cos.ap-guangzhou.myqcloud.com/img/1676D8DC-DB31-4087-ABA0-781918DD6969.png&#34; alt=&#34;图片&#34;  /&gt;
+&lt;img src=&#34;https://github-1305981322.cos.ap-guangzhou.myqcloud.com/img/1676D8DC-DB31-4087-ABA0-781918DD6969.png&#34; alt=&#34;图片&#34;&gt;
 重点关注 &lt;strong&gt;config.toml&lt;/strong&gt; 与 &lt;strong&gt;themes&lt;/strong&gt;。
 config.toml:配置文件
 themes:模版&lt;/p&gt;
@@ -78,7 +83,7 @@ git clone &lt;a href=&#34;https://github.com/CaiJimmy/hugo-theme-stack.git&#34;&
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;修改配置config.yaml：
-&lt;img src=&#34;https://github-1305981322.cos.ap-guangzhou.myqcloud.com/img/80EC369B-CEDB-4947-8453-3818FE4A1121.png&#34; alt=&#34;图片&#34;  /&gt;
+&lt;img src=&#34;https://github-1305981322.cos.ap-guangzhou.myqcloud.com/img/80EC369B-CEDB-4947-8453-3818FE4A1121.png&#34; alt=&#34;图片&#34;&gt;
 分别是：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;接下来要配置的github上给的地址。(等下再配置）&lt;/li&gt;
@@ -97,9 +102,9 @@ git clone &lt;a href=&#34;https://github.com/CaiJimmy/hugo-theme-stack.git&#34;&
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;）
 4 查看效果：
 mysite目录下执行 hugo server -D
-&lt;img src=&#34;https://carboon.github.io/1CAB4FC5-1847-4C72-B732-491AB46802B8.png&#34; alt=&#34;图片&#34;  /&gt;&lt;/p&gt;
+&lt;img src=&#34;1CAB4FC5-1847-4C72-B732-491AB46802B8.png&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;
 &lt;p&gt;浏览器打开：
-&lt;img src=&#34;https://carboon.github.io/75381AB3-C5F0-47E8-88D2-6B6B0242DB9F.png&#34; alt=&#34;图片&#34;  /&gt;&lt;/p&gt;
+&lt;img src=&#34;75381AB3-C5F0-47E8-88D2-6B6B0242DB9F.png&#34; alt=&#34;图片&#34;&gt;&lt;/p&gt;
 &lt;p&gt;5 建立静态页面，&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;
 hugo -D
@@ -129,39 +134,39 @@ theme 可以先随便选择&lt;/p&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;验证
 &lt;a href=&#34;https://carboon.github.io/&#34;&gt;https://carboon.github.io/&lt;/a&gt;
-&lt;img src=&#34;https://github-1305981322.cos.ap-guangzhou.myqcloud.com/img/WX20210520-175603@2x.png&#34; alt=&#34;图片&#34;  /&gt;&lt;/li&gt;
+&lt;img src=&#34;https://github-1305981322.cos.ap-guangzhou.myqcloud.com/img/WX20210520-175603@2x.png&#34; alt=&#34;图片&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;到这里就成功了。&lt;/p&gt;
 &lt;h3 id=&#34;改进&#34;&gt;改进&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;优化工作流: 本地编辑文档，然后更新public文档，然后再提交到github。虽然已经比较方便，但是涉及到三处操作。现在看能否精简一下。typora自身没有编辑后自动执行脚本的能力。所以只能合并后面两个流程，脚本如下：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
-&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;   
-&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; -e &lt;span class=&#34;s2&#34;&gt;&amp;#34;\033[0;32mDeploying updates to GitHub...\033[0m&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;   
+echo -e &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\033[0;32mDeploying updates to GitHub...\033[0m&amp;#34;&lt;/span&gt;
    
-&lt;span class=&#34;c1&#34;&gt;# Build the project.&lt;/span&gt;
-hugo &lt;span class=&#34;c1&#34;&gt;# if using a theme, replace by `hugo -t &amp;lt;yourtheme&amp;gt;`&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Build the project.&lt;/span&gt;
+hugo &lt;span style=&#34;color:#75715e&#34;&gt;# if using a theme, replace by `hugo -t &amp;lt;yourtheme&amp;gt;`&lt;/span&gt;
    
-&lt;span class=&#34;c1&#34;&gt;# Go To Public folder&lt;/span&gt;
-&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; public
-&lt;span class=&#34;c1&#34;&gt;# Add changes to git.&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Go To Public folder&lt;/span&gt;
+cd public
+&lt;span style=&#34;color:#75715e&#34;&gt;# Add changes to git.&lt;/span&gt;
 git add -A
    
-&lt;span class=&#34;c1&#34;&gt;# Commit changes.&lt;/span&gt;
-&lt;span class=&#34;nv&#34;&gt;msg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;rebuilding site `date`&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Commit changes.&lt;/span&gt;
+msg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;rebuilding site `date`&amp;#34;&lt;/span&gt;
    
-&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[[&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$#&lt;/span&gt; -eq &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
-  &lt;span class=&#34;nv&#34;&gt;msg&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$1&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; $# -eq &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+  msg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
    
-git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$msg&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;
+git commit -m &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$msg&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
    
-&lt;span class=&#34;c1&#34;&gt;# Push source and build repos.&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;# Push source and build repos.&lt;/span&gt;
 git push origin main
    
-&lt;span class=&#34;c1&#34;&gt;# Come Back&lt;/span&gt;
-&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ..
+&lt;span style=&#34;color:#75715e&#34;&gt;# Come Back&lt;/span&gt;
+cd ..
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;后面发现照片管理比较费事，调试本地md图片目录的路径和hugo图片路径就搞了很久。最终决定采用 云服务+picgo+typora模式。&lt;/p&gt;
@@ -182,18 +187,25 @@ git push origin main
 &lt;li&gt;继续试用一下，看看哪些可以进一步用来提升博客管理的个人体验&lt;/li&gt;
 &lt;li&gt;研究一下有没有办法将一键发布和编辑器绑定。&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>开博大吉</title>
-        <link>https://carboon.github.io/posts/new/</link>
-        <pubDate>Fri, 28 Feb 2020 11:47:15 +0800</pubDate>
+
         
-        <guid>https://carboon.github.io/posts/new/</guid>
-        <description>&lt;h2 id=&#34;大家好&#34;&gt;大家好&lt;/h2&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>开博大吉</title>
+      <link>https://example.com/posts/new/</link>
+      <pubDate>Fri, 28 Feb 2020 11:47:15 +0800</pubDate>
+      
+      <guid>https://example.com/posts/new/</guid>
+      <description>
+        
+          &lt;h2 id=&#34;大家好&#34;&gt;大家好&lt;/h2&gt;
 &lt;p&gt;这是我的博客，希望能写一些好的文章分享给大家~~~&lt;/p&gt;
-</description>
-        </item>
+
         
-    </channel>
+      </description>
+    </item>
+    
+  </channel>
 </rss>

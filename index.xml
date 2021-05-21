@@ -8,13 +8,12 @@
         <language>en-us</language>
         <lastBuildDate>Fri, 21 May 2021 13:37:07 +0800</lastBuildDate><atom:link href="https://carboon.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>常见工具命令杂物箱</title>
-        <link>https://carboon.github.io/posts/hugo/</link>
+        <link>https://carboon.github.io/posts/%E5%B8%B8%E8%A7%81%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4%E6%9D%82%E7%89%A9%E7%AE%B1/</link>
         <pubDate>Fri, 21 May 2021 13:37:07 +0800</pubDate>
         
-        <guid>https://carboon.github.io/posts/hugo/</guid>
-        <description>&lt;h1 id=&#34;工具命令杂物箱&#34;&gt;工具命令杂物箱&lt;/h1&gt;
-&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
-&lt;p&gt;常见工具的使用，将案例和场景进行汇总，后续都丢到这里来。初步包括shell 命令，git命令，ide的使用等等&lt;/p&gt;
+        <guid>https://carboon.github.io/posts/%E5%B8%B8%E8%A7%81%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4%E6%9D%82%E7%89%A9%E7%AE%B1/</guid>
+        <description>&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+&lt;p&gt;工作学习常见工具的使用，将案例和场景进行汇总，后续都丢到这里来。初步包括shell 命令，git命令，ide的使用等等&lt;/p&gt;
 &lt;h2 id=&#34;hugo&#34;&gt;hugo&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.gohugo.org/%c2%a0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官方文档&lt;/a&gt; 在此，基本上都是够用的&lt;/p&gt;

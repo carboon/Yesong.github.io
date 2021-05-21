@@ -9,11 +9,11 @@
     <lastBuildDate>Fri, 21 May 2021 13:37:07 +0800</lastBuildDate><atom:link href="https://carboon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>常见工具命令杂物箱</title>
-      <link>https://carboon.github.io/posts/hugo/</link>
+      <link>https://carboon.github.io/posts/%E5%B8%B8%E8%A7%81%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4%E6%9D%82%E7%89%A9%E7%AE%B1/</link>
       <pubDate>Fri, 21 May 2021 13:37:07 +0800</pubDate>
       
-      <guid>https://carboon.github.io/posts/hugo/</guid>
-      <description>工具命令杂物箱 背景 常见工具的使用，将案例和场景进行汇总，后续都丢到这里来。初步包括shell 命令，git命令，ide的使用等等
+      <guid>https://carboon.github.io/posts/%E5%B8%B8%E8%A7%81%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4%E6%9D%82%E7%89%A9%E7%AE%B1/</guid>
+      <description>背景 工作学习常见工具的使用，将案例和场景进行汇总，后续都丢到这里来。初步包括shell 命令，git命令，ide的使用等等
 hugo 官方文档 在此，基本上都是够用的
   安装
 $ brew install hugo   生成站点， 用一次后面就基本上不会再用第二次，而且还需要额外配置。

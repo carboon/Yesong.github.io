@@ -1,47 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://carboon.github.io/</loc>
-    <lastmod>2021-05-21T21:33:43+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://carboon.github.io/posts/hugo%E8%BF%AD%E4%BB%A3%E6%BC%94%E8%BF%9B/</loc>
-    <lastmod>2021-05-21T21:33:43+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://carboon.github.io/posts/</loc>
-    <lastmod>2021-05-21T21:33:43+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://carboon.github.io/posts/%E5%B8%B8%E8%A7%81%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4%E6%9D%82%E7%89%A9%E7%AE%B1/</loc>
-    <lastmod>2021-05-21T13:37:07+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://carboon.github.io/posts/hugo&#43;github/</loc>
-    <lastmod>2021-05-20T18:13:15+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://carboon.github.io/posts/new/</loc>
-    <lastmod>2020-02-28T11:47:15+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://carboon.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carboon.github.io/series/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carboon.github.io/tags/</loc>
-  </url>
-  
-</urlset>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    ><url>
+            <loc>https://www.nashome.cn/</loc><lastmod>2021-05-22T21:11:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.nashome.cn/posts/</loc><lastmod>2021-05-22T21:11:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.nashome.cn/posts/test/</loc><lastmod>2021-05-22T21:11:21&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.nashome.cn/posts/new/</loc><lastmod>2021-05-22T16:03:37&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://www.nashome.cn/posts/%E5%B8%B8%E8%A7%81%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://www.nashome.cn/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://www.nashome.cn/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>

@@ -3,7 +3,16 @@
         <title>所有文章 - Blog My Life</title>
         <link>https://www.nashome.cn/posts/</link>
         <description>所有文章 | Blog My Life</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 22 May 2021 21:11:21 &#43;0800</lastBuildDate><atom:link href="https://www.nashome.cn/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 03 Jun 2021 11:23:41 &#43;0800</lastBuildDate><atom:link href="https://www.nashome.cn/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Brew_learn</title>
+    <link>https://www.nashome.cn/posts/brew_learn/</link>
+    <pubDate>Thu, 03 Jun 2021 11:23:41 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://www.nashome.cn/posts/brew_learn/</guid>
+    <description><![CDATA[记录下brew使用问题 安装失败 在安装flink的时候，用 brew install apache-flink 命令 报错。报错的信息如下，一开始认为是包的问题。后来发现哪怕是安装 wget 也会出问题。
+后来，推断是brew 安装出了问题。
+ cd /usr/local/Homebrew/Library/Taps 删除 homebrew目录，再mkdir。 参照 这个 文章进行处理 https://zhuanlan.zhihu.com/p/90508170 ，重新安装。 主要是执行第二步：重新安装，第三步，设置镜像，第四步和第五步，设置bottles镜像。 brew update  再次验证一下：brew install wget。问题解决。]]></description>
+</item><item>
     <title>开博大吉</title>
     <link>https://www.nashome.cn/posts/test/</link>
     <pubDate>Sat, 22 May 2021 21:11:21 &#43;0800</pubDate>
